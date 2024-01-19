@@ -1,0 +1,230 @@
+Command Line:
+--------------------------
+  1: ws
+  2: AllProfiles.txt
+  3: GoodProfiles.txt
+  4: BadProfiles.txt
+--------------------------
+
+****************************************************
+* All Profiles
+****************************************************
+   67  Leonardo  DiCaprio        25     Simcoe M5J 3A1   27
+   68      Jack    Dawson       209  Ellerslie M2R 1H2   27
+   69      Kate   Winslet       356      Finch N2F 1H3   22
+   70      Rose   Bukater         1      Yonge M5E 1E5   22
+   71     Billy      Zane         5      Bloor M5E 1E5   22
+   72       Cal   Hockley        55      Finch M5E 1E9   29
+   73     Kathy     Bates        23   Dufferin M5E 1E5   24
+   74     Molly     Brown        45      Bloor M5E 1E5   27
+   75   Frances    Fisher         5      Finch M5E 1E5   32
+   76      Ruth    Dewitt      1995      Bloor M5E 1E5   35
+   77    Gloria    Stuart         5      Bloor M5E 1E5   34
+   78       Old      Rose         5      Bloor M5E 1E5   38
+   79      Bill    Paxton       765   Dufferin M5E 1E5   39
+   80     Brock    Lovett        55      Finch M5E 1EE   32
+   81   Bernard      Hill         5      Bloor M5E 1E5   22
+   82   Captain     Smith         5   Dufferin M5E 1E5   12
+   66     David    Warner      8765      Finch 555 1E5   24
+   85    Spicer   Lovejoy        15      Bloor M5E 1E5   62
+
+****************************************************
+* Good Profiles
+****************************************************
+  121  Leonardo  DiCaprio       205      Finch M5J 3A1   27
+  122      Kate   Winslet       356   Dufferin M5E 1H3   22
+  123     Billy      Zane         5      Bloor M5J 1E5   22
+  124     Kathy     Bates        23   Dufferin M5E 3A1   24
+  125   Frances    Fisher        25      Finch M5E 3A1   32
+  126    Gloria    Stuart         5      Bloor M5E 1E5   34
+  127      Bill    Paxton       765   Dufferin M5E 1E5   39
+  128   Bernard      Hill        25      Bloor M5E 1E5   22
+  120     Brock    Lovett        55      Finch M5E 1EE   32
+  131     David    Warner      8765      Finch 555 1E5   24
+
+****************************************************
+* Bad Profiles
+****************************************************
+  167      Jack    Dawson       209  Ellerslie M2R 1H2   27
+  168      Rose   Bukater         1      Yonge M5E 1E5   22
+  169       Cal   Hockley        55      Finch M5E 1E9   29
+  170     Molly     Brown        45      Bloor M5E 1E5   27
+  171      Ruth   Bukater      1995      Bloor M5E 1E5   35
+  172       Old      Rose         5      Bloor M5E 1ED   38
+  173     Brock    Lovett        55      Finch M5E21E5   32
+  174   Captain     Smith         5   Dufferin M5E 1E5   12
+  166    Spicer   Lovejoy        15      Bloor M5E 1E5   62
+
+****************************************************
+* Excluding bad profiles using Raw Pointers
+****************************************************
+     C [176][  Leonardo  DiCaprio]
+    CC [177][  Leonardo  DiCaprio] copy of [176]
+    ~D [176][  Leonardo  DiCaprio]
+     C [178][      Kate   Winslet]
+    CC [179][      Kate   Winslet] copy of [178]
+    CC [180][  Leonardo  DiCaprio] copy of [177]
+    ~D [177][  Leonardo  DiCaprio]
+    ~D [178][      Kate   Winslet]
+     C [181][     Billy      Zane]
+    CC [182][     Billy      Zane] copy of [181]
+    CC [183][  Leonardo  DiCaprio] copy of [180]
+    CC [184][      Kate   Winslet] copy of [179]
+    ~D [180][  Leonardo  DiCaprio]
+    ~D [179][      Kate   Winslet]
+    ~D [181][     Billy      Zane]
+     C [185][     Kathy     Bates]
+    CC [186][     Kathy     Bates] copy of [185]
+    ~D [185][     Kathy     Bates]
+     C [187][   Frances    Fisher]
+    CC [188][   Frances    Fisher] copy of [187]
+    CC [189][  Leonardo  DiCaprio] copy of [183]
+    CC [190][      Kate   Winslet] copy of [184]
+    CC [191][     Billy      Zane] copy of [182]
+    CC [192][     Kathy     Bates] copy of [186]
+    ~D [183][  Leonardo  DiCaprio]
+    ~D [184][      Kate   Winslet]
+    ~D [182][     Billy      Zane]
+    ~D [186][     Kathy     Bates]
+    ~D [187][   Frances    Fisher]
+     C [193][      Ruth    Dewitt]
+    CC [194][      Ruth    Dewitt] copy of [193]
+    ~D [193][      Ruth    Dewitt]
+     C [195][    Gloria    Stuart]
+    CC [196][    Gloria    Stuart] copy of [195]
+    ~D [195][    Gloria    Stuart]
+     C [197][      Bill    Paxton]
+    CC [198][      Bill    Paxton] copy of [197]
+    ~D [197][      Bill    Paxton]
+     C [199][   Bernard      Hill]
+    CC [200][   Bernard      Hill] copy of [199]
+    CC [201][  Leonardo  DiCaprio] copy of [189]
+    CC [202][      Kate   Winslet] copy of [190]
+    CC [203][     Billy      Zane] copy of [191]
+    CC [204][     Kathy     Bates] copy of [192]
+    CC [205][   Frances    Fisher] copy of [188]
+    CC [206][      Ruth    Dewitt] copy of [194]
+    CC [207][    Gloria    Stuart] copy of [196]
+    CC [208][      Bill    Paxton] copy of [198]
+    ~D [189][  Leonardo  DiCaprio]
+    ~D [190][      Kate   Winslet]
+    ~D [191][     Billy      Zane]
+    ~D [192][     Kathy     Bates]
+    ~D [188][   Frances    Fisher]
+    ~D [194][      Ruth    Dewitt]
+    ~D [196][    Gloria    Stuart]
+    ~D [198][      Bill    Paxton]
+    ~D [199][   Bernard      Hill]
+     C [209][     David    Warner]
+    ~D [209][     David    Warner]
+    ~D [201][  Leonardo  DiCaprio]
+    ~D [202][      Kate   Winslet]
+    ~D [203][     Billy      Zane]
+    ~D [204][     Kathy     Bates]
+    ~D [205][   Frances    Fisher]
+    ~D [206][      Ruth    Dewitt]
+    ~D [207][    Gloria    Stuart]
+    ~D [208][      Bill    Paxton]
+    ~D [200][   Bernard      Hill]
+ERROR: *** Invalid Address ***
+NOTE: An exception occurred and expected!
+
+****************************************************
+* Excluding bad profiles using Smart Pointers
+****************************************************
+     C [210][  Leonardo  DiCaprio]
+    CC [211][  Leonardo  DiCaprio] copy of [210]
+    ~D [210][  Leonardo  DiCaprio]
+     C [212][      Kate   Winslet]
+    CC [213][      Kate   Winslet] copy of [212]
+    CC [214][  Leonardo  DiCaprio] copy of [211]
+    ~D [211][  Leonardo  DiCaprio]
+    ~D [212][      Kate   Winslet]
+     C [215][     Billy      Zane]
+    CC [216][     Billy      Zane] copy of [215]
+    CC [217][  Leonardo  DiCaprio] copy of [214]
+    CC [218][      Kate   Winslet] copy of [213]
+    ~D [214][  Leonardo  DiCaprio]
+    ~D [213][      Kate   Winslet]
+    ~D [215][     Billy      Zane]
+     C [219][     Kathy     Bates]
+    CC [220][     Kathy     Bates] copy of [219]
+    ~D [219][     Kathy     Bates]
+     C [221][   Frances    Fisher]
+    CC [222][   Frances    Fisher] copy of [221]
+    CC [223][  Leonardo  DiCaprio] copy of [217]
+    CC [224][      Kate   Winslet] copy of [218]
+    CC [225][     Billy      Zane] copy of [216]
+    CC [226][     Kathy     Bates] copy of [220]
+    ~D [217][  Leonardo  DiCaprio]
+    ~D [218][      Kate   Winslet]
+    ~D [216][     Billy      Zane]
+    ~D [220][     Kathy     Bates]
+    ~D [221][   Frances    Fisher]
+     C [227][      Ruth    Dewitt]
+    CC [228][      Ruth    Dewitt] copy of [227]
+    ~D [227][      Ruth    Dewitt]
+     C [229][    Gloria    Stuart]
+    CC [230][    Gloria    Stuart] copy of [229]
+    ~D [229][    Gloria    Stuart]
+     C [231][      Bill    Paxton]
+    CC [232][      Bill    Paxton] copy of [231]
+    ~D [231][      Bill    Paxton]
+     C [233][   Bernard      Hill]
+    CC [234][   Bernard      Hill] copy of [233]
+    CC [235][  Leonardo  DiCaprio] copy of [223]
+    CC [236][      Kate   Winslet] copy of [224]
+    CC [237][     Billy      Zane] copy of [225]
+    CC [238][     Kathy     Bates] copy of [226]
+    CC [239][   Frances    Fisher] copy of [222]
+    CC [240][      Ruth    Dewitt] copy of [228]
+    CC [241][    Gloria    Stuart] copy of [230]
+    CC [242][      Bill    Paxton] copy of [232]
+    ~D [223][  Leonardo  DiCaprio]
+    ~D [224][      Kate   Winslet]
+    ~D [225][     Billy      Zane]
+    ~D [226][     Kathy     Bates]
+    ~D [222][   Frances    Fisher]
+    ~D [228][      Ruth    Dewitt]
+    ~D [230][    Gloria    Stuart]
+    ~D [232][      Bill    Paxton]
+    ~D [233][   Bernard      Hill]
+     C [243][     David    Warner]
+    ~D [243][     David    Warner]
+    ~D [235][  Leonardo  DiCaprio]
+    ~D [236][      Kate   Winslet]
+    ~D [237][     Billy      Zane]
+    ~D [238][     Kathy     Bates]
+    ~D [239][   Frances    Fisher]
+    ~D [240][      Ruth    Dewitt]
+    ~D [241][    Gloria    Stuart]
+    ~D [242][      Bill    Paxton]
+    ~D [234][   Bernard      Hill]
+ERROR: *** Invalid Address ***
+NOTE: An exception occurred and expected!
+
+
+****************************************************
+* Excluding good profiles using Raw Pointers
+****************************************************
+  257      Jack    Dawson       209  Ellerslie M2R 1H2   27
+  258      Rose   Bukater         1      Yonge M5E 1E5   22
+  259       Cal   Hockley        55      Finch M5E 1E9   29
+  260     Molly     Brown        45      Bloor M5E 1E5   27
+  256      Ruth    Dewitt      1995      Bloor M5E 1E5   35
+  262       Old      Rose         5      Bloor M5E 1E5   38
+  264   Captain     Smith         5   Dufferin M5E 1E5   12
+  266    Spicer   Lovejoy        15      Bloor M5E 1E5   62
+
+****************************************************
+* Excluding good profiles using Smart Pointers
+****************************************************
+  280      Jack    Dawson       209  Ellerslie M2R 1H2   27
+  281      Rose   Bukater         1      Yonge M5E 1E5   22
+  282       Cal   Hockley        55      Finch M5E 1E9   29
+  283     Molly     Brown        45      Bloor M5E 1E5   27
+  279      Ruth    Dewitt      1995      Bloor M5E 1E5   35
+  285       Old      Rose         5      Bloor M5E 1E5   38
+  287   Captain     Smith         5   Dufferin M5E 1E5   12
+  289    Spicer   Lovejoy        15      Bloor M5E 1E5   62
+
