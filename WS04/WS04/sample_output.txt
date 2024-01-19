@@ -1,0 +1,214 @@
+Command Line:
+--------------------------
+  1: ws
+  2: cheeses.txt
+--------------------------
+Cheese Inventory
+----------------------------------------------------------------------
+|Buffalo Gouda        |500  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+|Brie with Truffles   |600  |8.45 |              Soft Pungent Savory |
+|Smoked Mozzarella    |2000 |2.12 |    Low-Moisture Semi-Soft Smokey |
+|Tre Stelle Ricotta   |1200 |3.45 |               Creamy Light Sweet |
+|Old Orange Cheddar   |700  |2.56 |                       Sharp Hard |
+|Le Rustique Camembert|450  |1.99 |                Moist Soft Creamy |
+|Provolone            |350  |2.66 |            Semi-Hard Sweet Sharp |
+|Manchego             |200  |2.00 |             Firm Compact Buttery |
+|Swiss                |4000 |2.45 |                  Semi-Hard Spicy |
+----------------------------------------------------------------------
+Sliced Cheeses
+----------------------------------------------------------------------
+|Buffalo Gouda        |100  |2.99 |                     Sweet Creamy |
+|Smoked Mozzarella    |500  |2.12 |    Low-Moisture Semi-Soft Smokey |
+|NaC                  |0    |0.00 |                                  |
+----------------------------------------------------------------------
+Cheese Inventory
+----------------------------------------------------------------------
+|Buffalo Gouda        |400  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+|Brie with Truffles   |600  |8.45 |              Soft Pungent Savory |
+|Smoked Mozzarella    |1500 |2.12 |    Low-Moisture Semi-Soft Smokey |
+|Tre Stelle Ricotta   |1200 |3.45 |               Creamy Light Sweet |
+|Old Orange Cheddar   |700  |2.56 |                       Sharp Hard |
+|Le Rustique Camembert|450  |1.99 |                Moist Soft Creamy |
+|Provolone            |350  |2.66 |            Semi-Hard Sweet Sharp |
+|Manchego             |200  |2.00 |             Firm Compact Buttery |
+|Swiss                |4000 |2.45 |                  Semi-Hard Spicy |
+----------------------------------------------------------------------
+Cheese Shop (empty)
+----------------------------------------------------------------------
+--------------------------
+Cheese Magic
+--------------------------
+This shop is out of cheese!
+--------------------------
+----------------------------------------------------------------------
+Cheese Shop (add chesses to empty shop)
+----------------------------------------------------------------------
+--------------------------
+Cheese Magic
+--------------------------
+|Buffalo Gouda        |400  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Slice Cheeses[0-1] - buffalo gouda, bulgarian feta
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Cheese Inventory (bufallo gouda/bulgarian feta updated amounts)
+----------------------------------------------------------------------
+|Buffalo Gouda        |300  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |700  |3.12 |               Soft Crumbly Tangy |
+----------------------------------------------------------------------
+Cheese Shop (after slicing - no changes in shop)
+----------------------------------------------------------------------
+--------------------------
+Cheese Magic
+--------------------------
+|Buffalo Gouda        |400  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Shop (Copy Construction)
+----------------------------------------------------------------------
+--------------------------
+Cheese Magic
+--------------------------
+|Buffalo Gouda        |400  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Shop (Copy Assignment)
+----------------------------------------------------------------------
+--------------------------
+Cheese Magic
+--------------------------
+|Buffalo Gouda        |400  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Shop (Move Construction)
+----------------------------------------------------------------------
+--------------------------
+
+--------------------------
+This shop is out of cheese!
+--------------------------
+--------------------------
+Cheese Magic
+--------------------------
+|Buffalo Gouda        |400  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Shop (Move Assignment)
+----------------------------------------------------------------------
+--------------------------
+
+--------------------------
+This shop is out of cheese!
+--------------------------
+--------------------------
+Cheese Magic
+--------------------------
+|Buffalo Gouda        |400  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |800  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (empty)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+This party is just getting started!
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (add chesses to empty party)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Buffalo Gouda        |300  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |700  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Slice Cheeses[0-1] - buffalo gouda, bulgarian feta
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Cheese Inventory (bufallo gouda/bulgarian feta updated amounts)
+----------------------------------------------------------------------
+|Buffalo Gouda        |200  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+----------------------------------------------------------------------
+Cheese Party (after slicing - changes in party)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Buffalo Gouda        |200  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (Copy Construction)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Buffalo Gouda        |200  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (Copy Assignment)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Buffalo Gouda        |200  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (Move Construction)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+This party is just getting started!
+--------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Buffalo Gouda        |200  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (Move Assignment)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+This party is just getting started!
+--------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Buffalo Gouda        |200  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (Added Duplicate Cheese - No change to inventory)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Buffalo Gouda        |200  |2.99 |                     Sweet Creamy |
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
+Cheese Party (Remove Cheeses)
+----------------------------------------------------------------------
+--------------------------
+Cheese Party
+--------------------------
+|Bulgarian Feta       |600  |3.12 |               Soft Crumbly Tangy |
+--------------------------
+----------------------------------------------------------------------
