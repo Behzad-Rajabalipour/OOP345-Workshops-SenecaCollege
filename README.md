@@ -148,20 +148,7 @@ For example, to run Workshop 1:
 
 ## Project Structure
 
-\`\`\`
-OOP345-Workshops/
-├── Workshop1/
-├── Workshop2/
-├── Workshop3/
-├── Workshop4/
-├── Workshop5/
-├── Workshop6/
-├── Workshop7/
-├── Workshop8/
-├── Workshop9/
-├── Workshop10/
-└── ...
-\`\`\`
+![image](https://github.com/Behzad-Rajabalipour/OOP345-Workshops/assets/115672803/9b3ec771-3485-4fb6-a1ef-20b5ea800305)
 
 ## Contributing
 
